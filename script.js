@@ -47,22 +47,7 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 }, false);
 
-// Typing effect for hero section
-document.addEventListener('DOMContentLoaded', function() {
-    const typingElement = document.querySelector('.typing-effect');
-    const originalText = typingElement.innerHTML;
-    typingElement.innerHTML = '';
 
-    let i = 0;
-    const typeEffect = setInterval(function() {
-        if (i < originalText.length) {
-            typingElement.innerHTML += originalText.charAt(i);
-            i++;
-        } else {
-            clearInterval(typeEffect);
-        }
-    }, 50);
-});
 
 // Project cards hover effect
 const projectCards = document.querySelectorAll('.project-card');

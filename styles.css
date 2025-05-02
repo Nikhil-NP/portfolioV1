@@ -559,3 +559,14 @@ footer {
         font-size: 1.8rem;
     }
 }
+
+
+
+.about-nav{
+    background-color: #f0f0f0;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+  }
+  
