@@ -180,3 +180,18 @@ document.head.insertAdjacentHTML('beforeend', `
 }
 </style>
 `);
+
+function changeMode(){
+    const body =  document.body;
+    const icon = document.querySelector('#toggle i');
+
+
+    body.classList.toggle('light');
+
+    if (body.classList.contains('light')){
+        icon.classList.replace('fa-sun', 'fa-moon');
+    }
+    else{
+        icon.classList.replace('fa-moon','fa-sun')
+    }
+}

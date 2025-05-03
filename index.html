@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header >
         <nav id="navbar">
             <div class="logo">
                 <!-- You can use your initials or a personal logo here -->
@@ -23,12 +23,16 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button id="toggle" onclick="changeMode()"><i class="fa-solid fa-sun"></i></button></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
+        </nav>
+        
+        </button>
 
     </header>
 
@@ -65,8 +69,8 @@
                                 <nav>
                                     <ul>
                                     <li>
-                                        <a href="https://atme.edu.in/" target="_blank" rel="noopener noreferrer" class="about-nav">
-                                        🎓 B.Tech in CSE – ATME College of Engineering
+                                        <a href="https://atme.edu.in/" target="_blank" rel="noopener noreferrer" class="edu">
+                                        🎓 B.E / B.Tech in CSE – ATME College of Engineering
                                         </a>
                                     </li>
                                     </ul>
@@ -284,24 +288,23 @@
         <section id="contact" class="contact">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-container">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn primary">Send Message</button>
-                    </form>
-                    <div id="formStatus"></div>
+                <div>
+                    <a href="mailto:nikhilrajpurohitnkp@gmail.com" class="email-link">
+                        <i class="fa-solid fa-envelope"></i> 
+                    </a>
                 </div>
+                <div id="toggle"><!--i decided to reuse the styles of toggle icon as it was convient-->
+                    <a href="https://github.com/Nikhil-NP" target="_blank"><i class="fab fa-github"></i></a> 
+                </div>
+                <div id="toggle">
+                    <a href="https://www.linkedin.com/in/nikhil-purohit-452167314/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div id="toggle">
+                    <a href="https://x.com/Nikhil_KP_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+                
+                
             </div>
         </section>
     </main>
@@ -310,9 +313,6 @@
         <div class="footer-content">
             <p>&copy; 2025 Nikhil P. All rights reserved.</p>
             <div class="social-links">
-                <a href="https://github.com/Nikhil-NP" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/nikhil-purohit-452167314/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/Nikhil_KP_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 
             </div>
         </div>
