@@ -82,56 +82,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Form submission handler
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        // Simple form validation
-        if (!name || !email || !message) {
-            formStatus.innerHTML = '<p class="error">Please fill out all fields</p>';
-            return;
-        }
-        
-        // Here you would typically send the form data to a server
-        // For demonstration, we'll simulate a successful submission
-        formStatus.innerHTML = '<p class="success">Message sent successfully! I\'ll get back to you soon.</p>';
-        contactForm.reset();
-        
-        // For a real implementation, you could use a service like FormSpree or Netlify Forms
-        // Example using fetch:
-        /*
-        fetch('https://formspree.io/f/yourformid', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                name,
-                email,
-                message
-            })
-        })
-        .then(response => {
-            if (response.ok) {
-                formStatus.innerHTML = '<p class="success">Message sent successfully! I\'ll get back to you soon.</p>';
-                contactForm.reset();
-            } else {
-                formStatus.innerHTML = '<p class="error">Something went wrong. Please try again later.</p>';
-            }
-        })
-        .catch(error => {
-            formStatus.innerHTML = '<p class="error">Something went wrong. Please try again later.</p>';
-            console.error('Error:', error);
-        });
-        */
-    });
-}
+
 
 // Skills animation on scroll
 const skillItems = document.querySelectorAll('.skill-item');
