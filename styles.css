@@ -397,17 +397,17 @@ ul {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    
 }
 
 .contact-item i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
+    font-size: 2.6rem;
     margin-right: 15px;
     width: 30px;
 }
 
 .contact-item a:hover {
-    color: var(--primary-color);
+    color: var(--muted-color);
 }
 
 
@@ -429,7 +429,7 @@ footer {
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 
 .social-links a {
